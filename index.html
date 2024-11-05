@@ -3,18 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals</title>
+    <meta description="WDD 131 - Dynamic Web Fundamentals" author="Holly Anne Briggs" keyword="Dynamic Web Fundamentals utah united states Holly Briggs">
+
+    <link rel="stylesheet" type="text/css" href="/styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;400&display=swap" rel="stylesheet">
+    <script src="/scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Header</h1>
-        <nav></nav>
+        <h1>WDD 131: Dynamic Web Fundamentals - Holly A. Briggs</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/holly-briggs-2aa360237/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/17?lang=eng&id=p13#p13">Scripture</a></li>
+                <li><a href="">Final Project</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <h2>WDD 131 - Holly Anne Briggs</h2>
-        <aside><p>Where does this text show up?</p></aside>
+        <section class="card" id="card1">
+            <div class="title">
+                <h2>About Me</h2>
+            </div>
+            <div id="about-me">
+                <div id="about-me-text">
+                    <p>My name is Holly and I was born in Oklahoma. I moved to Utah when I was 16. I graduated from UVSC with an associates degree. I served a mission in Indianapolis, Indiana. I am married and have three children. I work part-time as a school lunch lady at my kids school and I am a student at BYU Idaho online.</p>
+                </div>
+                <div id="about-me-image">
+                    <img src="/images/profile_pic.jpg" alt="middle aged woman with long brown hair and blue eyes.">
+                </div>
+                <div class="divTitle">
+                    <hr><br><h3>Utah, United States of America</h3><br>
+                </div>
+                <div class="div02">
+                    <img src="/images/mountainrange.jpeg" alt="picture of the Utah mountain range">
+                </div>
+                <div class="div01">
+                    <p>Utah is a state in the Western United States. It is known for it's mountain ranges and deserts. It is the 34th most populated state in the US. It's capital is Salt Lake City. In 2002 the winter Olympics were hosted in that city. It is famous for being the home of the Church of Jesus Christ of Latter-day Saints. The first members of that religion moved there in 1847.</p>
+                </div>
+                
+            </div>
+        </section>
+        <section class="card" id="card2">
+            <div class="title">
+                <h2>Web Dev Resources</h2>
+            </div>
+            <div class="div03">
+                <ul>
+                    <li><a href="">Dev.to Community</a></li>
+                    <li><a href="">Smashing Magazine</a></li>
+                    <li><a href="">CSS Tricks</a></li>
+                    <li><a href="">W3 Schools</a></li>
+                    <li><a href="">Udemy</a></li>
+                    <li><a href="">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <footer><p>WDD 131 - Dynamic Web Fundamentals Class, 10/31/24</p></footer>
-    
+    <footer>
+        <p>©<span id="yearDisplay"></span> Holly Briggs Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
