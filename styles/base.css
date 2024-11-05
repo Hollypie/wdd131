@@ -16,7 +16,7 @@ header {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     padding-bottom: 1rem;
     display: grid;
@@ -73,6 +73,7 @@ h2 {
 nav {
     background-color: #283618;
     margin-top: 1rem;
+    display:  flex;
 }
 
 nav a {
