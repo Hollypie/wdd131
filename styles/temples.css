@@ -92,7 +92,7 @@ footer {
     display: grid;
     grid-gap: 10px;
     justify-items: center;  
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* You can adjust the columns */
+    grid-template-columns: 1fr;
     max-width: 800px;
     width: 100%;
     margin-top: 1rem;
@@ -140,5 +140,9 @@ figcaption {
 @media (min-width: 559px) {
 	img {
         width: 250px;
+    }
+
+    .photo-album {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* You can adjust the columns */
     }
 }
