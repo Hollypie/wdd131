@@ -140,9 +140,9 @@ figcaption {
 main {
     display: grid;
 }
-/* 
+
 @media (min-width: 559px) {
 	img {
         width: 250px;
     }
-} */
+}
