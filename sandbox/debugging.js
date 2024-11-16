@@ -10,3 +10,5 @@ console.log("Area1:", area);
 
 area = circleArea(4);
 console.log("Area2:", area);
+
+const msg = document.querySelector("#message");

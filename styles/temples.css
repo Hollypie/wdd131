@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto";
+    font-weight: 400;
+    padding: 1rem;
+    max-width: 800px;
+}
+
+header {
+    background-color: #475419;
+    border-radius: 1rem;    
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+h1 {
+    font-weight: 200;
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 1.75rem;
+    color: white;
+}
+
+h2 {
+    padding: .5rem;
+    text-align: center; 
+    width: 100%;         
+}
+
+nav {
+    display: flex;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	background-color: #283618;
+	color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #f67490;
+	color: #333;
+	font-weight: 700;
+    border-radius: 1rem;
+}
+
+.navigation ul {
+    list-style-type: none;
+    
+}
+
+img {
+    width: 300px;            
+    border-radius: 1rem;
+    margin: 1rem 1rem .2rem 1rem;             
+    display: block;           
+    margin-left: auto;        
+    margin-right: auto;     
+}
+
+footer {
+    text-align: center;
+    color:#fff;
+    background-color: #475419;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.photo-album {
+    display: grid;
+    grid-gap: 10px;
+    justify-items: center;  
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* You can adjust the columns */
+    max-width: 800px;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+}
+
+figure {
+    width: 100%;
+    display: flex;         
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;     
+}
+
+figcaption {
+    text-align: center;
+    font-size: smaller;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+    color: white;
+    padding: 10px 10px 0 0;
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.open a {
+	display: block;
+}
+
+@media (min-width: 559px) {
+	img {
+        width: 250px;
+    }
+}
