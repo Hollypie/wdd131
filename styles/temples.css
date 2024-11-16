@@ -72,7 +72,8 @@ nav a:hover {
 }
 
 img {
-    width: 300px;            
+    width: 350px; 
+    height: 283px;           
     border-radius: 1rem;
     margin: 1rem 1rem .2rem 1rem;             
     display: block;           
@@ -140,6 +141,7 @@ figcaption {
 @media (min-width: 559px) {
 	img {
         width: 250px;
+        height: 202px;
     }
 
     .photo-album {
