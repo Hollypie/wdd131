@@ -58,7 +58,8 @@ nav {
 	text-decoration: none;
 	color: #fff;
 }
-.navigation a:hover {
+
+nav a:hover {
 	background-color: #f67490;
 	color: #333;
 	font-weight: 700;
@@ -136,8 +137,12 @@ figcaption {
 	display: block;
 }
 
+main {
+    display: grid;
+}
+/* 
 @media (min-width: 559px) {
 	img {
         width: 250px;
     }
-}
+} */
