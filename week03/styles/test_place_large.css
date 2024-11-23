@@ -1,0 +1,51 @@
+/* Remove unnecessary CSS in place-large.css */
+.content {
+    max-width: none;
+    width: 100%;
+    position: relative; /* This allows absolute positioning of .one and .two */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+header {
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.card {
+    width: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: .5rem;
+    z-index: 10;
+}
+
+.cardContent {
+    background-color: rgba(255, 255, 255, 0.164);
+    padding: 1rem;
+}
+
+/* .one and .two should be positioned relative to the .content container */
+.one {
+    position: absolute;
+    top: 50px;   /* Adjust vertical position as needed */
+    left: 1rem;  /* Aligns .one to the left */
+    z-index: 15;
+}
+
+.two {
+    position: absolute;
+    top: 200px;  /* Position .two lower than .one */
+    right: 1rem; /* Aligns .two to the right */
+    z-index: 15;
+}

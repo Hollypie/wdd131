@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United States of America</title>
+    <meta name="description" content="United States of America>
+    <meta name="author" content="Holly Briggs">
+
+    <link rel="stylesheet" type="text/css" href="styles/place.css">
+    <link rel="stylesheet" type="text/css" href="styles/place-large.css" media="(min-width: 640px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>Utah, United States of America</h1>
+        </header> 
+        <main>
+            <div>
+                <picture>
+                    <source srcset="images/hero_large1.webp" media="(min-width: 600px)">
+                    <source srcset="images/hero_small1.webp" media="(min-width: 550px)">
+                    <img src="images/hero_small1.webp" alt="United States flag" width="550" height="733">
+                </picture>
+            </div>
+            <div class="card one">
+                <div class="cardTitle">
+                    <h2>Data</h2>
+                </div>
+                <div class="cardContent">
+                    <div class="labels">
+                        <p>Area:</p>
+                        <p>Population:</p>
+                        <p>Capital:</p>
+                        <p>Languages:</p>
+                        <p>Currency:</p>
+                        <p>Time Zones:</p>
+                        <p>Calling Code:</p>
+                        <p>Internet TLD:</p>
+                    </div>
+                    <div class="data">
+                        <p>84,899 sq. miles</p>
+                        <p>3.418 million</p>
+                        <p>Salt Lake City</p>
+                        <p>English</p>
+                        <p>US Dollar</p>
+                        <p>MST - (GMT-7)</p>
+                        <p>385, 425, and 801</p>
+                        <p>.us</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card two">
+                <div class="cardTitle">
+                    <h2>Weather</h2>
+                </div>
+                <div class="cardContent">
+                    <div class="labels">
+                        <p>Temperature:</p>
+                        <p>Conditions:</p>
+                        <p>Wind:</p>
+                        <p>Wind Chill:</p>
+                    </div>
+                    <div class="data">
+                        <p>40 °F</p>
+                        <p>Partly Cloudy</p>
+                        <p>10 mph</p>
+                        <p id="windChill">9.8 C</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+                <p>©<span id="yearDisplay"></span> Holly Briggs Utah, USA</p>
+                <p id="lastModified"></p>
+        </footer>
+    </div>
+</body>
+</html>
