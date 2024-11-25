@@ -26,6 +26,13 @@
     margin: 0 auto;
 }
 
+.svgImage {
+    width: 2.5rem;
+    height: auto;
+    color: var(--font-color-light);
+    padding-top: .7rem;
+}
+
 body {  
     display: flex;
     flex-direction: column;

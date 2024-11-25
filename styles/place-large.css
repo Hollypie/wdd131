@@ -41,7 +41,13 @@ header {
 
 .two {
     position: absolute;
-    top: 50%;
+    top: 30%;
     right: 40px;
     z-index: 15;
+}
+
+@media  (min-width: 1200px) {
+    .two {
+        top: 45%;
+    }
 }
