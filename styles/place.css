@@ -33,6 +33,13 @@
     padding-top: .7rem;
 }
 
+.svgImage::after {
+    content: "Weather";
+    color: #555;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
 body {  
     display: flex;
     flex-direction: column;
