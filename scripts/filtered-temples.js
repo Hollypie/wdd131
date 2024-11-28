@@ -116,9 +116,35 @@ const temples = [
   ];
 
 document.addEventListener('DOMContentLoaded', () => {
+
     const photoAlbum = document.querySelector('.photoalbum');
 
     temples.forEach(obj => {
+        const div = document.createElement('div');
+        div.classList.add('temple-div');
+
+        const formattedArea = obj.area.toLocaleString();
+
+        // Create content dynamically for each temple
+        div.innerHTML = `
+            <h3>${obj.templeName}</h3>
+            <p>Location: ${obj.location}</p>
+            <p>Dedicated: ${obj.dedicated}</p>
+            <p>Area: ${formattedArea} sq ft</p>
+            <img src="${obj.imageUrl}" alt="${obj.templeName}" loading="lazy">
+        `;
+
+        // Append each div to the photoAlbum container
+        photoAlbum.appendChild(div);
+    });
+});
+
+const smallNav = document.getElementById('new');
+
+document.addEventListener('click', function() {
+    const smallTemples = temples.filter(temples.area < 10000);
+
+    smalltemples.forEach(obj => {
         const div = document.createElement('div');
         div.classList.add('object-div');
 
@@ -138,4 +164,4 @@ document.addEventListener('DOMContentLoaded', () => {
         // Append each div to the photoAlbum container
         photoAlbum.appendChild(div);
     });
-});
+})
