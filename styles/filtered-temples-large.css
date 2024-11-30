@@ -16,10 +16,11 @@
     flex-direction: row;
 }
 
-.navigation a {
-    display: block;
+.navigation button {
+    display: flex;
     flex: 1 1 100%;
 }
+
 
 .navigation ul {
     display: flex;
