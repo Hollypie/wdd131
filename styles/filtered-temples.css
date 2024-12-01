@@ -78,8 +78,12 @@ nav {
 .navigation button:hover {
     background-color: var(--accent-color);
     color: var(--dark-font-color);
-    font-weight: 700;
+    font-weight: 2rem;
     border-radius: 1rem;
+}
+
+.navigation a::hover {
+    font-weight: .5rem;
 }
 
 .navigation ul {
