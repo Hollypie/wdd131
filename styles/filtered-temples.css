@@ -82,7 +82,7 @@ nav {
     border-radius: 1rem;
 }
 
-.navigation a::hover {
+.navigation a:hover {
     font-weight: .5rem;
 }
 
