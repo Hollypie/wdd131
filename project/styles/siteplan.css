@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+:root {
+    --primary-color: #F59A8E;
+    --second-color:  #FFD151;
+    --third-color: #9BC149;
+    --fourth-color: #B4CFC5;
+    --fifth-color: #A7ABB4;
+    --dark-color: #2D4461;
+    --background-color: #c2c2c2;
+
+    --title-font: 'Borel';
+    --main-font: 'Red Hat Text';
+    --quote-font: 'Pacifico';
+}
+
+body {
+    display: block;
+    margin: 3rem;
+    max-width: 650px;
+    font-family: var(--main-font);
+}
+
+header {
+    background-image: linear-gradient(to right, var(--primary-color), var(--second-color), var(--third-color), var(--fourth-color), var(--fifth-color));
+    padding: .5rem 1rem 0rem 1rem;
+    text-align: center;
+    border-radius: .5rem;
+  }
+
+h1 {
+    font-family: var(--title-font);
+    color: var(--dark-color);
+    margin: 2rem;
+    
+}
+
+.bold {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 1.5rem 1rem 0rem 1rem;
+}
+
+.subtitle {
+   background-color: #00000000;
+}
+
+h2 {
+    background-color: var(--second-color);
+    padding: .5rem;
+    border-radius: .5rem;
+
+}
+
+p {
+    margin: 1rem;
+}
+
+h3 {
+    background-color: var(--fifth-color);
+    padding: .5rem;
+    border-radius: .5rem;
+    margin: 1rem;
+}
+
+a {
+    margin: 1rem 1rem 1rem 1rem ;
+
+}
+
+ul {
+    margin: 2rem;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    border-radius: .5rem;
+    padding: .2rem;
+    text-align: center;
+}
