@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Week 5 Form Assignment</title>
+    <meta name="description" content="WDD 131 - Week 5 Form Assignment">
+    <meta name="author" content="Holly Briggs">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Post a Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+
+            <label for="productName">Product Name</label>
+                <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product</option>
+                </select>
+            <label id="overallRating" name="overallRating" for="rating">Overall Rating</label>
+                <div id="overallRating">
+                    <label><input type="radio" name="rating" value="1 Star">&#8902</label>
+                    <label><input type="radio" name="rating" value="2 Stars">&#8902&#8902</label>
+                    <label><input type="radio" name="rating" value="3 Stars">&#8902&#8902&#8902</label>
+                    <label><input type="radio" name="rating" value="4 Stars">&#8902&#8902&#8902&#8902</label>
+                    <label><input type="radio" name="rating" value="5 Stars">&#8902&#8902&#8902&#8902&#8902</label>
+                </div>
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+            <label name="productFeatures" id="productFeatures" class="productFeatures">Which features did you fine useful in the product? <span class="note">(Check all that apply)</span></label>
+            
+                <label><input type="checkbox" name="durability" value="durability">Durability</label>
+                <label><input type="checkbox" name="easeOfUse" value="ease of use">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="Performance">Performance</label>
+                <label><input type="checkbox" name="design" value="Design">Design</label>
+            <label for="review">Written Review<span class="note">(Optional)</span></label>
+            <textarea id="review" name="review" rows="5" cols="50" placeholder="Write your review here..."></textarea>
+            <label for="name">Your Name<span class="note">(Optional)</span><input type="text" name="name" id="name" placeholder="Your name"</label>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="yearDisplay"></span> Holly Briggs Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
