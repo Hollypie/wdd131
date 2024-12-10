@@ -1,0 +1,92 @@
+/* this code hides the hamburger button. */
+#menu {
+    display: none; /* hide hamburger button */
+}
+
+.navigation {
+    display: flexbox;
+    flex-direction: row;
+}
+
+.navigation button {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+h1 {
+    text-align: left;
+}
+
+#home {
+    background-color: var(--primary-color);
+}
+
+#blog {
+    background-color: var(--second-color);
+}
+
+#reviews {
+    background-color: var(--third-color);
+}
+
+#about {
+    background-color: var(--fourth-color);
+}
+
+/* Main content Blog Card */
+
+.blogCard {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+.blogPost {
+    display: grid;
+}
+
+.title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.date {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.reference {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.blurb {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.blogPhoto {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+}
+
+.blogPhoto img {
+    display: block;
+    width: 90%;
+    height: auto;
+}
+
+@media (min-width: 1200px) {
+    .blogPhoto img {
+        width: 600px;
+        height: 600px;
+    }
+}
