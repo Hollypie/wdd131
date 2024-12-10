@@ -81,3 +81,13 @@ function loadMostRecentEntry() {
 document.addEventListener("DOMContentLoaded", function() {
     loadMostRecentEntry();
 });
+
+// Code for the form submit alert
+
+const form = document.getElementById('mailingListForm');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    alert("Congrats! You have joined our mailing list!");
+});

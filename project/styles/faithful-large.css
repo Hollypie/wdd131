@@ -1,3 +1,18 @@
+:root {
+    --primary-color: #F59A8E;
+    --second-color:  #FFD151;
+    --third-color: #9BC149;
+    --fourth-color: #B4CFC5;
+    --fifth-color: #A7ABB4;
+    --dark-color: #2D4461;
+    --background-color: #c2c2c2;
+    --light-font-color: white;
+
+    --title-font: 'Borel';
+    --main-font: 'Red Hat Text';
+    --quote-font: 'Pacifico';
+}
+
 /* this code hides the hamburger button. */
 #menu {
     display: none; /* hide hamburger button */
@@ -16,9 +31,10 @@
 .navigation ul {
     display: flex;
     flex-direction: row;
-    background-color: bisque;
+    background-color: var(--dark-color);
     justify-content: space-evenly;
     width: 100%;
+    border-radius: .5rem;
 }
 
 h1 {
@@ -51,6 +67,7 @@ h1 {
 
 .blogPost {
     display: grid;
+    padding: 5px;
 }
 
 .title {
@@ -84,9 +101,17 @@ h1 {
     height: auto;
 }
 
-@media (min-width: 1200px) {
-    .blogPhoto img {
-        width: 600px;
-        height: 600px;
-    }
+.section2 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.form {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.quote {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }

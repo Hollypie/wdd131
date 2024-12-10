@@ -19,11 +19,28 @@
     --quote-font: 'Pacifico';
 }
 
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Make body a flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family: var(--main-font); /* Your custom font */
+}
+
 body {
     display: block;
     font-family: var(--main-font);
     margin: 1rem;
     min-width: 400px;
+    max-width: 1200px;
+}
+
+main {
+    display: block; /* Ensure it's treated as a block element */
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a max-width to prevent stretching too much */
+    padding: 20px 0 20px 0; /* Optional: Add some padding to the content */
 }
 
 .rainbow {
@@ -50,32 +67,36 @@ nav {
 }
 
 .navigation button {
-    display: none;
-    border: none;
-    flex: 1 1 100%;
-    border: none;
-    padding: .5rem;
-    text-align: center;
-    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem;
     background-color: var(--secondary-color);
     color: var(--light-font-color);
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer; /* Ensure it looks like a clickable element */
 }
 
 .navigation button:hover {
-    background-color: var(--dark-color);
-    color: var(--light-font-color);
+    background-color: var(--background-color);
+    color: black;
     font-weight: 700;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
-.navigation a:hover {
-    font-weight: 900;
-}
+/* 
+.navigation button.active {
+    background-color: var(--dark-color); 
+    color: var(--light-font-color);
+    border-radius: .5rem;
+} */
 
 .navigation ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 #menu {
@@ -147,16 +168,27 @@ nav {
     background-color: transparent; /* No background when the menu is closed */
 }
 
-ul {
-    margin: 2rem;
-}
-
 footer {
     background-color: var(--dark-color);
     color: white;
     border-radius: .5rem;
     padding: .2rem;
     text-align: center;
+}
+
+.blogCard {
+    border: 2px dashed var(--second-color);
+    border-radius: 1rem;
+    padding: 15px;
+}
+
+.blogPost {
+    padding: 15px 25px 15px 15px;
+    
+}
+
+div .blurb {
+    padding: 15px 15px 15px 0;
 }
 
 .blogPhoto img {
@@ -173,4 +205,58 @@ footer {
     align-self: center;
 }
 
+label {
+    display: block;
+    padding: 10px;
+}
 
+input[type="checkbox"], input[type="email"] {
+    margin: 10px;
+}
+
+.form {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 10px;
+}
+
+input[type="email"] {
+    height: 44px;
+    text-align: left;
+    margin: 0;
+    width: 90%;
+}
+
+.email {
+    text-align: left;
+    padding: 0 0 0 30px;
+}
+.quote {
+    background-color: var(--third-color);
+    padding: 20px;
+    border-radius: 1rem;
+    text-align: center;
+    font-family: var(--quote-font);
+    font-size: 1.8rem;
+    margin: 10px;
+}
+
+.banner {
+    background-color: var(--fourth-color);
+    padding: 20px;
+    border-radius: 1rem;
+    margin: 10px 10px 0 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+input[type='submit'] {
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    margin: 20px;
+    background-color: var(--dark-color);
+    color: var(--light-font-color);
+}
