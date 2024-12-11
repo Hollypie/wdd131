@@ -91,3 +91,4 @@ form.addEventListener('submit', function(event) {
 
     alert("Congrats! You have joined our mailing list!");
 });
+
