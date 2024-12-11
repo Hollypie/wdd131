@@ -53,7 +53,13 @@ main {
 h1 {
     font-family: var(--title-font);
     color: var(--dark-color);
-    
+    font-size: 3rem; 
+}
+
+h2 {
+    font-family: var(--title-font);
+    color: var(--dark-color);
+    font-size: 2rem; 
 }
 
 a {
@@ -286,4 +292,8 @@ input[type='submit'] {
 
 .blogFilter select {
     height: 44px;
+}
+
+.productLink {
+    color: var(--dark-color);
 }
