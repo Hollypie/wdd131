@@ -56,6 +56,10 @@ h1 {
     
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     display: flex;
 }
@@ -259,4 +263,18 @@ input[type='submit'] {
     margin: 20px;
     background-color: var(--dark-color);
     color: var(--light-font-color);
+}
+
+.blogFilter {
+    display: flex;
+    justify-content: center;
+    background-color: var(--third-color);
+    border-radius: 1rem;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.blogFilter select {
+    height: 44px;
 }

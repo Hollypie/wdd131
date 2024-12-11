@@ -32,6 +32,8 @@ navigation.classList.toggle('open');
 hamButton.classList.toggle('open');
 });
 
+// this code is for the temple album filtering
+
 const temples = [
   {
     templeName: "Aba Nigeria",
