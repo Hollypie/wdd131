@@ -27,7 +27,7 @@ checkWindowSize();
 const posts = [
     {
         title: "The Lord is my Shepherd",
-        date: "2024-12-01",
+        date: "2024-12-12",
         book: "Bible",
         reference: "Psalm 23",
         blurb: "Psalm 23 has always been a comforting passage, one that reminds us of God\’s care and provision. The image of the Lord as a shepherd is one of the most tender and intimate in the Bible. Shepherds guide, protect, and care for their flocks, and in this psalm, David paints a picture of a loving God who provides for all our needs. As I reflect on this verse, I realize how often I\’ve tried to control my own life, striving for more or worrying about what\’s to come. Yet, in this simple truth, I find peace. If the Lord is my shepherd, then I am under His loving care, and I lack nothing. This doesn\’t mean life will always be easy or free of struggle, but it does mean that God is with me in every circumstance, leading me to still waters and green pastures, and even walking with me through the valleys of life. This verse reminds me to trust in God's provision and direction, knowing that He is always leading me toward what is best. I am His sheep, and He is my faithful shepherd, guiding me with love and care.",
