@@ -297,3 +297,26 @@ input[type='submit'] {
 .productLink {
     color: var(--dark-color);
 }
+
+.color {
+    display: block;
+    align-items: center;
+}
+
+.colorCode {
+    padding: 20px;
+
+}
+
+.codePic {
+    display: flex;
+    justify-content: center;
+}
+
+.codePic img {
+    border-radius: 1rem;
+    width: 70%;
+}
+
+
+

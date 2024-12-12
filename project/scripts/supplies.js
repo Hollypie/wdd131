@@ -48,7 +48,7 @@ function renderSupplyList(array) {
                     <div class="blurb"><p class="blurbp">${obj.blurb}</p></div>
                 </div>      
                 <div class="blogPhoto">
-                    <img class="image" src="${obj.imgFile}">
+                    <img class="image" src="${obj.imgFile}" alt="image feature ${obj.title}" loading="lazy">
                 </div>
             </div>
             <br>`;

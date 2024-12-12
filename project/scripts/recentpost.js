@@ -36,7 +36,7 @@ function loadMostRecentEntry() {
             <div class="blurb"><p class="blurbp">${mostRecentEntry.blurb}</p></div>
         </div>      
         <div class="blogPhoto">
-            <img class="image" src="${mostRecentEntry.imgFile}" alt="${mostRecentEntry.title}">
+            <img class="image" src="${mostRecentEntry.imgFile}" alt="${mostRecentEntry.title} - ${mostRecentEntry.reference}" loading="lazy">
         </div>`;
 }
 
