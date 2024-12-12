@@ -67,7 +67,7 @@ const posts = [
     },
     {
         title: "The Lords Prayer",
-        date: "2024-12-12",
+        date: "2024-12-8",
         book: "Bible",
         reference: "Matthew 6:9-13",
         blurb: "In Matthew 6:9-13, Jesus provides us with the well-known Lord's Prayer, a model for how we should approach God in prayer. This prayer begins with addressing God as our \"Father,\" highlighting a personal relationship with our Creator. We are reminded that God is holy, and we are called to honor His name. The phrase \"Thy kingdom come, Thy will be done on earth as it is in heaven\" reflects our submission to God's divine plan and our desire for His kingdom to be established in our hearts and lives. Next, we ask for our \"daily bread,\" acknowledging our dependence on God for our physical needs, while the plea for forgiveness teaches us the importance of grace—both receiving it from God and extending it to others. \"Lead us not into temptation, but deliver us from evil\" is a request for protection, recognizing our vulnerability and need for God's strength to overcome life's challenges. As we reflect on this prayer in our scripture journaling, it\’s a powerful reminder to seek God's will, trust in His provision, and align our hearts with His purposes. This prayer serves as both a personal conversation with God and a guide for living a life devoted to Him.",
