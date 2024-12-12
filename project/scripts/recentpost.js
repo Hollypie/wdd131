@@ -43,3 +43,18 @@ function loadMostRecentEntry() {
 document.addEventListener("DOMContentLoaded", function() {
     loadMostRecentEntry();
 });
+
+// Get the form element
+const form = document.getElementById('mailingListForm');
+
+// Add an event listener to the form for the 'submit' event
+form.addEventListener('submit', function(event) {
+    // Prevent the form from submitting the traditional way (page reload)
+    event.preventDefault();
+    
+    // Show an alert that the user has been added to the mailing list
+    alert('You have been added to our mailing list!');
+    
+    // Optionally, clear the form or reset it
+    form.reset();
+});
